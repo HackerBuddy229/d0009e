@@ -3,6 +3,8 @@
 from io import StringIO
 import sys
 #import lab2
+from bounce import bounce
+import bounce2
 #import __main__ as main
 import __main__
 
@@ -13,7 +15,7 @@ def testBounce(bounceFkn, printName, num, correctOutput):
   sys.stdout = StringIO()
 
   #main.bounce(num)
-  bounceFkn(num)
+  bounce(num)
 
   outString = sys.stdout.getvalue()
   sys.stdout = oldStdOut

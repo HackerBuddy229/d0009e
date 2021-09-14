@@ -3,6 +3,8 @@
 #from io import StringIO
 import sys
 #import lab2
+from tvarsumman import tvarsumman
+from tvarsumman2 import tvarsumman2
 import __main__
 
 def testSum(fkn, printName, num, correctOutput):
@@ -18,9 +20,9 @@ def testSum(fkn, printName, num, correctOutput):
     print("   Testresultat:  ",sum)
     print("   Rätt resultat: ",correctOutput)
 
-testSum(__main__.tvarsumman, "tvarsumman", 123, 6)
-testSum(__main__.tvarsumman, "tvarsumman", 0, 0)
-testSum(__main__.tvarsumman, "tvarsumman", 7619, 23)
-testSum(__main__.tvarsumman2, "tvarsumman2", 123, 6)
-testSum(__main__.tvarsumman2, "tvarsumman2", 0, 0)
-testSum(__main__.tvarsumman2, "tvarsumman2", 7619, 23)
+testSum(tvarsumman, "tvarsumman", 123, 6)
+testSum(tvarsumman, "tvarsumman", 0, 0)
+testSum(tvarsumman, "tvarsumman", 7619, 23)
+testSum(tvarsumman2, "tvarsumman2", 123, 6)
+testSum(tvarsumman2, "tvarsumman2", 0, 0)
+testSum(tvarsumman2, "tvarsumman2", 7619, 23)

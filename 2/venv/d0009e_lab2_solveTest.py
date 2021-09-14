@@ -3,6 +3,7 @@
 #import StringIO
 import sys
 #import lab2
+from solve import solve
 import __main__ as main
 
 def testfun1(x):
@@ -21,5 +22,5 @@ def testSolve(solvF, start, solution, precision):
     print("   Testresultat:  ",xs)
     print("   Rätt resultat: ",solution,"+-",precision)
 
-testSolve(main.solve, 10, 1, 0.1)
-testSolve(main.solve, -10, -1, 0.1)
+testSolve(solve, 10, 1, 0.1)
+testSolve(solve, -10, -1, 0.1)

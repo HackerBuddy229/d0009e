@@ -2,6 +2,9 @@ import math
 
 
 def tvarsumman2(n):
+    if n == 0:
+        return n
+    
     length = int(math.log10(n)) + 1
 
     total = 0
@@ -16,5 +19,3 @@ def tvarsumman2(n):
 
     return total
 
-
-print(tvarsumman2(1234))

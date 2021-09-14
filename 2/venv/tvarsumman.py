@@ -1,9 +1,9 @@
-import math
+
 
 
 def tvarsumman(number):
-    length = int(math.log10(number)) + 1
-    if length == 1:
+
+    if number < 10:
         return number
 
     next_integer = number // 10
@@ -11,5 +11,3 @@ def tvarsumman(number):
 
     return tvarsumman(next_integer) + current_integer
 
-
-print(tvarsumman(1234))
