@@ -7,5 +7,3 @@ def bounce(n):
         bounce(n-1)
         print(n)
 
-bounce(5)
-

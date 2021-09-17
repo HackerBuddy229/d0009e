@@ -1,6 +1,4 @@
 
-
-
 def tvarsumman(number):
 
     if number < 10:
@@ -10,4 +8,3 @@ def tvarsumman(number):
     current_integer = (number % 10)
 
     return tvarsumman(next_integer) + current_integer
-
